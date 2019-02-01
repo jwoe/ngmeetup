@@ -1,4 +1,9 @@
-# AngularBeginnersTraining
+# Angular Meetup:
+
+https://www.meetup.com/OC-Expert-Camp-Munchen/events/257960771/
+https://www.meetup.com/Munchen-Coding-Dojo-Meetup/events/257960673/
+
+## About
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.1.4.
 
