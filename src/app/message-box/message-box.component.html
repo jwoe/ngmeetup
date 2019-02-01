@@ -1,0 +1,6 @@
+<div
+  style="background-color:lightgrey; border: 1px solid darkblue; width:100%;text-align: center; border-radius: 2px;">
+  <ng-content></ng-content>
+  <button (click)="generatePlanetData()">generate</button>
+  <span> - name:{{planets[selected].name}} , weight:{{planets[selected].weight}}, size: {{planets[selected].size}} , temp: {{planets[selected].temp}}</span>
+</div>

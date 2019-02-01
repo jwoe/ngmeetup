@@ -1,0 +1,55 @@
+<div class="p-grid p-align-center">
+
+  <!-- TODO STEP ONE -->
+  <!-- move our static planet data to our component ts as fields, e.g. name, weight-->
+  <!-- display the data with double curly braces: {{}} they provide data binding with built-in change detection -->
+  <span class="p-col-1">Sonne</span>
+  <div class="p-col-1">
+
+    <!-- TODO STEP TWO -->
+    <!-- bind the method onChangePlanetName to the keyUp event -->
+    <!-- pass the value of the input element to our method -->
+    <!-- add a reference #nameRef to our input field. We use it in the keyup event procesing to access the value of the input field -->
+    <!-- (keyup) is the OnKeyup event -->
+    <input style="width: 100%;">
+    <!-- button: bind the method updatePlanetName to the buttons' click event -->
+    <!-- (click) is the OnClick event trigger of the button -->
+    <button>Confirm</button>
+  </div>
+  <!-- image src url === moved to ts ? 'well done' : 'what are you waiting for';-->
+  <div class="p-col-3 p-md-2"><img src="./assets/00_Sun.png" style="width: 100%;"/></div>
+  <span class="p-col-2">Radius: 1.41×10^18 km</span>
+  <span class="p-col-2">Masse: 1.9885×10^30 kg</span>
+  <span class="p-col-2">Temperatur: 5778 K</span>
+</div>
+
+<!-- TODO STEP FOUR -->
+<h2>Exercise 2: Message Box (ng-content)</h2>
+<!-- add our custom message box component -->
+<!-- to add a component simply add a tag with the components' selector which can be found in the components ts annot  ation -->
+<!-- everything between the oc-message-box tags replaces the <ng-content> of the message-box-component -->
+<!-- the new component has a message for you, check it out in the browser -->
+
+<!--TODO STEP SIX (after a short presentation)-->
+<!--Display all our planets in a list, make use of the *ngFor structural directive-->
+<!--syntax hint: let arrrrr of array-->
+<ul>
+  <li>
+    <!--Bind to the arrrrrrrrrrr instead of the arrrray itself.-->
+  </li>
+</ul>
+<!--TODO STEP SEVEN -->
+<!--replace the list item with the above formatted planet tags.-->
+<!--roughly: ul + li + div grid + div class p-col ; div + image ; span-->
+
+
+
+
+<!--TODO EXERCISE FOUR AND MORE ~ step eight-->
+<!--If you wish you can continue the exercise here in this component, if you are struggling to keep up or want a clean start for the next-->
+<!--exercises: take a look at the donotdead-openinside component.-->
+<!--you can continue there (in that case make use of the CHECKPOINT in the app.component.html (display the new component instead of this one)-->
+
+<!--TODO STEP EIGHT: *ngSwitch directive-->
+<!--Make use of the structural *ngSwitch directive to display a human readable temperature-->
+<!--apply *ngSwitchCase to a tag e.g. div, or span in which you evaluate the temperature i.e. "temp >= 500"-->
