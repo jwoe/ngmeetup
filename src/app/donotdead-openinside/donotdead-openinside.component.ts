@@ -16,7 +16,7 @@ export class DonotdeadOpeninsideComponent implements OnInit {
    * STEP TWO: we want to change our planets' name.
    * Update a temporary field with the current text-input and then update our planet name when the button is pressed.
    */
-  tmpName: String = '';
+  tmpName: string = '';
   public keepTrackOfInput(name: string): void {
     this.tmpName = name;
   }
