@@ -35,14 +35,6 @@ export class PlanetComponent implements OnInit {
     // no change required
   }
 
-  /**
-   * TODO EXERCISE FOUR AND MORE ~ step eight
-   * If you wish you can continue the exercise here in this component, if you are struggling to keep up or want a clean start for the next
-   * exercises: take a look at the donotdead-openinside component.
-   * you can continue there (in that case make use of the CHECKPOINT in the app.component.html
-   * (display the new component instead of this one)
-   */
-
   /*
    * TODO STEP NINE fix the wrong planet-system size in our app.component.html (@Input and @Output)
    * Move the declaration of the planet array to the app.component.ts
