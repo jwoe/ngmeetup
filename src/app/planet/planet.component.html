@@ -3,15 +3,8 @@
   <span class="p-col-1">{{name}}</span>
   <div class="p-col-1">
 
-    <!-- TODO STEP TWO -->
-    <!-- bind the method onChangePlanetName to the keyUp event -->
-    <!-- pass the value of the input element to our method -->
-    <!-- add a reference #nameRef to our input field. We use it in the keyup event procesing to access the value of the input field -->
-    <!-- (keyup) is the OnKeyup event -->
-    <input style="width: 100%;">
-    <!-- button: bind the method updatePlanetName to the buttons' click event -->
-    <!-- (click) is the OnClick event trigger of the button -->
-    <button>Confirm</button>
+    <input #nameRef style="width: 100%;" (keyup)="onChangePlanetName(nameRef.value)">
+    <button (click)="updatePlanetName()">Confirm</button>
   </div>
   <!-- image src url === moved to ts ? 'well done' : 'what are you waiting for';-->
   <div class="p-col-3 p-md-2"><img src="{{imageSrc}}" style="width: 100%;"/></div>

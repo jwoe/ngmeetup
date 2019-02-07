@@ -11,18 +11,17 @@ export class PlanetComponent implements OnInit {
   radius = '1.41×10^18';
   weight = '1.9885×10^30';
   temperature = '5778';
-  imageSrc = './assets/00_Sun.png'
+  imageSrc = './assets/00_Sun.png';
 
-  /*
-   * TODO STEP TWO: we want to change our planets' name.
-   * Update a temporary field with the current text-input and then update our planet name when the button is pressed.
-   */
-  public keepTrackOfInput(name: string): void {
+  nextName = '';
 
+  public onChangePlanetName(nextName): void {
+    this.nextName = nextName;
   }
 
-  // public updatePlanetName ... how do i write a function again?
-
+  public updatePlanetName(): void {
+    this.name = this.nextName;
+  }
 
   /*
    * TODO STEP THREE: replace the individual planet data fields with a single object containing said properties.
