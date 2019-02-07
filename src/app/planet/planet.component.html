@@ -1,9 +1,6 @@
 <div class="p-grid p-align-center">
 
-  <!-- TODO STEP ONE -->
-  <!-- move our static planet data to our component ts as fields, e.g. name, weight-->
-  <!-- display the data with double curly braces: {{}} they provide data binding with built-in change detection -->
-  <span class="p-col-1">Sonne</span>
+  <span class="p-col-1">{{name}}</span>
   <div class="p-col-1">
 
     <!-- TODO STEP TWO -->
@@ -17,10 +14,10 @@
     <button>Confirm</button>
   </div>
   <!-- image src url === moved to ts ? 'well done' : 'what are you waiting for';-->
-  <div class="p-col-3 p-md-2"><img src="./assets/00_Sun.png" style="width: 100%;"/></div>
-  <span class="p-col-2">Radius: 1.41×10^18 km</span>
-  <span class="p-col-2">Masse: 1.9885×10^30 kg</span>
-  <span class="p-col-2">Temperatur: 5778 K</span>
+  <div class="p-col-3 p-md-2"><img src="{{imageSrc}}" style="width: 100%;"/></div>
+  <span class="p-col-2">Radius: {{radius}} km</span>
+  <span class="p-col-2">Masse: {{weight}} kg</span>
+  <span class="p-col-2">Temperatur: {{temperature}} K</span>
 </div>
 
 <!-- TODO STEP FOUR -->

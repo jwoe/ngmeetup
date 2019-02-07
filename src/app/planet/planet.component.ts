@@ -7,7 +7,11 @@ import {Component, OnInit} from '@angular/core';
 })
 export class PlanetComponent implements OnInit {
 
-  // TODO STEP ONE: add fields for our planet data, .e.g. name, weight
+  name = 'Sonne';
+  radius = '1.41×10^18';
+  weight = '1.9885×10^30';
+  temperature = '5778';
+  imageSrc = './assets/00_Sun.png'
 
   /*
    * TODO STEP TWO: we want to change our planets' name.
