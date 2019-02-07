@@ -7,13 +7,19 @@ import {Component, OnInit} from '@angular/core';
 })
 export class PlanetComponent implements OnInit {
 
-  planet = {
+  planets = [{
     name: 'Sonne',
-    radius: '1.41×10^18',
-    weight: '1.9885×10^30',
-    temperature: '5778',
-    imageSrc: './assets/00_Sun.png'
-  };
+    radius: '1.41×10^18 km',
+    weight: '1.9885×10^30 kg',
+    temp: '5778 K',
+    image: './assets/00_Sun.png'
+  }, {
+    name: 'Merkur',
+    radius: 'zero',
+    weight: '3.301×10^23 kg',
+    temp: 'given',
+    image: './assets/01_Mercury.png'
+  }];
 
   nextName = '';
 
@@ -22,16 +28,8 @@ export class PlanetComponent implements OnInit {
   }
 
   public updatePlanetName(): void {
-    this.planet.name = this.nextName;
+    this.planets[0].name = this.nextName;
   }
-
-  /*
-   * TODO STEP FIVE: complete our solar-system
-   * Wrap our planet object in an array and add some more planets.
-   * Fix the binding in the html, you can access an array at position i with: myArray[i].property
-   * Done? nice give me a signal and prepare for a short presentation intermission.
-   * If you are the first to finish, help out your neighbor three seats to the left.
-   */
 
   constructor() {
     // no change required

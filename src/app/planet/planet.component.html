@@ -1,16 +1,16 @@
 <div class="p-grid p-align-center">
 
-  <span class="p-col-1">{{planet.name}}</span>
+  <span class="p-col-1">{{planets[0].name}}</span>
   <div class="p-col-1">
 
     <input #nameRef style="width: 100%;" (keyup)="onChangePlanetName(nameRef.value)">
     <button (click)="updatePlanetName()">Confirm</button>
   </div>
   <!-- image src url === moved to ts ? 'well done' : 'what are you waiting for';-->
-  <div class="p-col-3 p-md-2"><img src="{{planet.imageSrc}}" style="width: 100%;"/></div>
-  <span class="p-col-2">Radius: {{planet.radius}} km</span>
-  <span class="p-col-2">Masse: {{planet.weight}} kg</span>
-  <span class="p-col-2">Temperatur: {{planet.temperature}} K</span>
+  <div class="p-col-3 p-md-2"><img src="{{planets[0].image}}" style="width: 100%;"/></div>
+  <span class="p-col-2">Radius: {{planets[0].radius}}</span>
+  <span class="p-col-2">Masse: {{planets[0].weight}}</span>
+  <span class="p-col-2">Temperatur: {{planets[0].temp}}</span>
 </div>
 
 <h2>Exercise 2: Message Box (ng-content)</h2>
@@ -37,5 +37,5 @@
 <!--you can continue there (in that case make use of the CHECKPOINT in the app.component.html (display the new component instead of this one)-->
 
 <!--TODO STEP EIGHT: *ngSwitch directive-->
-<!--Make use of the structural *ngSwitch directive to display a human readable temperature-->
-<!--apply *ngSwitchCase to a tag e.g. div, or span in which you evaluate the temperature i.e. "temp >= 500"-->
+<!--Make use of the structural *ngSwitch directive to display a human readable temp-->
+<!--apply *ngSwitchCase to a tag e.g. div, or span in which you evaluate the temp i.e. "temp >= 500"-->
