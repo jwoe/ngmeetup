@@ -27,10 +27,10 @@ export class AppComponent {
     image: './assets/03_Earth.png'
   }];
 
-  public count: number = this.planets.length;
+  public count = 0;
 
-  /*
-   * TODO STEP FIVETEEN
-   * add the method to bind with the planet-component output and update the count
-   */
+  public onCount(count): void {
+    this.count = count;
+  }
+
 }

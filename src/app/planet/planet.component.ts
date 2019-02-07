@@ -1,4 +1,4 @@
-import {Component, Input, OnInit} from '@angular/core';
+import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
 
 @Component({
   selector: 'oc-planet',
@@ -8,6 +8,8 @@ import {Component, Input, OnInit} from '@angular/core';
 export class PlanetComponent implements OnInit {
 
   @Input() planets;
+
+  @Output() countEvent = new EventEmitter<Number>();
 
   nextName = '';
 
@@ -23,18 +25,8 @@ export class PlanetComponent implements OnInit {
     // no change required
   }
 
-  /*
-   * TODO STEP TWELVE output the planet size
-   * Add a field annotated with the @Output decorator.
-   * It's type should be EventEmitter<number> since we want it to emmit the number of planets of this component.
-   * Instantiate the field.
-   */
-
   ngOnInit() {
-    /*
-     * TODO STEP THIRTEEN
-     * call the 'emit' function on the field of step twelve with the planet array size
-     */
+    this.countEvent.emit(this.planets.length);
   }
 
   // Optional task: instead of changing a planets name add a whole new planet on a button press, don't forget to emit the new planet count
