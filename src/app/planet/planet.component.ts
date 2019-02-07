@@ -11,12 +11,12 @@ export class PlanetComponent implements OnInit {
 
   nextName = '';
 
-  public onChangePlanetName(nextName): void {
-    this.nextName = nextName;
+  public onChangePlanetName(planet, nextName): void {
+    planet.nextName = nextName;
   }
 
-  public updatePlanetName(): void {
-    this.planets[0].name = this.nextName;
+  public updatePlanetName(planet): void {
+    planet.name = planet.nextName;
   }
 
   constructor() {
