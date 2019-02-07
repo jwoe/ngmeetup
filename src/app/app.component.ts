@@ -7,13 +7,27 @@ import {Component} from '@angular/core';
 })
 export class AppComponent {
 
-  public count: number = 0;
+  planets = [{
+    name: 'Sonne',
+    radius: '1.41×10^18 km',
+    weight: '1.9885×10^30 kg',
+    temp: '5778 K',
+    image: './assets/00_Sun.png'
+  }, {
+    name: 'Merkur',
+    radius: 'zero',
+    weight: '3.301×10^23 kg',
+    temp: 'given',
+    image: './assets/01_Mercury.png'
+  }, {
+    name: 'Erde',
+    radius: 'dont',
+    weight: 'care',
+    temp: 'at all',
+    image: './assets/03_Earth.png'
+  }];
 
-  /**
-   * TODO: STEP TEN
-   * add our planet array from the planet component here to give it as an input parameter to the planet component.
-   * Maybe add a second array of planets and another planet component and give each a different planet-system.
-   */
+  public count: number = this.planets.length;
 
   /*
    * TODO STEP FIVETEEN

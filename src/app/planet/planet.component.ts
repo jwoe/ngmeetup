@@ -1,4 +1,4 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 
 @Component({
   selector: 'oc-planet',
@@ -7,19 +7,7 @@ import {Component, OnInit} from '@angular/core';
 })
 export class PlanetComponent implements OnInit {
 
-  planets = [{
-    name: 'Sonne',
-    radius: '1.41×10^18 km',
-    weight: '1.9885×10^30 kg',
-    temp: '5778 K',
-    image: './assets/00_Sun.png'
-  }, {
-    name: 'Merkur',
-    radius: 'zero',
-    weight: '3.301×10^23 kg',
-    temp: 'given',
-    image: './assets/01_Mercury.png'
-  }];
+  @Input() planets;
 
   nextName = '';
 
@@ -34,12 +22,6 @@ export class PlanetComponent implements OnInit {
   constructor() {
     // no change required
   }
-
-  /*
-   * TODO STEP NINE fix the wrong planet-system size in our app.component.html (@Input and @Output)
-   * Move the declaration of the planet array to the app.component.ts
-   * Decorate this components planet array with an @Input annotation
-   */
 
   /*
    * TODO STEP TWELVE output the planet size
