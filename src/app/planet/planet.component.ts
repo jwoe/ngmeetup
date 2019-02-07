@@ -7,11 +7,13 @@ import {Component, OnInit} from '@angular/core';
 })
 export class PlanetComponent implements OnInit {
 
-  name = 'Sonne';
-  radius = '1.41×10^18';
-  weight = '1.9885×10^30';
-  temperature = '5778';
-  imageSrc = './assets/00_Sun.png';
+  planet = {
+    name: 'Sonne',
+    radius: '1.41×10^18',
+    weight: '1.9885×10^30',
+    temperature: '5778',
+    imageSrc: './assets/00_Sun.png'
+  };
 
   nextName = '';
 
@@ -20,14 +22,8 @@ export class PlanetComponent implements OnInit {
   }
 
   public updatePlanetName(): void {
-    this.name = this.nextName;
+    this.planet.name = this.nextName;
   }
-
-  /*
-   * TODO STEP THREE: replace the individual planet data fields with a single object containing said properties.
-   * {name:'', size:, weight}
-   * update the binding in the html, you can access object fields with object.field
-   */
 
   /*
    * TODO STEP FIVE: complete our solar-system
